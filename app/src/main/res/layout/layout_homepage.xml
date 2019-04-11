@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <TextView
+        android:id="@+id/textMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+        android:text="Silahkan Pilih Menu"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textMenu">
+
+        <Button
+            android:id="@+id/btnInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textMenu"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="40dp"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:text="input"
+            android:layout_marginBottom="40dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnInput"
+            android:text="history"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:textSize="30dp"
+            android:layout_marginBottom="40dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:background="@android:color/holo_blue_bright"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
